@@ -1,25 +1,11 @@
-package Test;
+package lab3;
 import java.util.List;
-import java.util.ArrayList;
+import java.util.ArrayList; 
 import java.util.Scanner;
 
-class Student{
-	String name;
-	int id;
-	Student(String name, int id){
-		this.name = name;
-		this.id = id;
-	}
-	Student(){
-		this.name = "Unknown";
-		this.id = 0;
-	}
-	public void print() {
-		System.out.printf("%d %s \n", id, name);
-	}
-}
 
-public class lab3 {
+
+public class StudentTest {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -47,11 +33,10 @@ public class lab3 {
 		
 		System.out.println("Total students in list: " + aistudent.size());
 		
-		// Enhanced for-loop to print all students in the list
 		for (Student s : aistudent) {
 			s.print();
 		}
 		
-		sc.close(); // Good practice to close the scanner
+		sc.close(); 
 	}
 }
